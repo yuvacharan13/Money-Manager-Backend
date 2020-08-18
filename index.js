@@ -33,7 +33,7 @@ app.get('/fetch', async (req, res) => {
         console.log(data1);
         await client.close();
         res.json({
-            items: data1
+            data: data1
         });
     } catch (error) {
         res.status(500).json({
